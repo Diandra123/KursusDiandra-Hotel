@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href"">
+    <title>Data Penduduk Desa Sabandar Cianjur</title>
+
+    <style>
+        .btn-primary {
+            float: left;
+        }
+
+        .btn-outline-success {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background:white;padding: 20px;border-radius: 15px;">
+        <div class="card mt-4">
+            <div class="card-header text-center">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">Ubah Data Kamar Hotel</h2>
+            </div>
+            <div class="card-body">
+                <br />
+                <br />
+
+                <form method="post" action="/admin">
+
+                    <div class="form-group">
+                        <label>No Kamar</label>
+                        <input type="text" name="No Kamar" class="form-control" placeholder="No Kamar" value="001">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jumlah Kasur</label>
+                        <input type="text" name="Jumlah Kasur" class="form-control" placeholder="Jumlah Kasur"
+                            value="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fasilitas</label>
+                        <input type="text" name="Fasilitas" class="form-control" placeholder="Fasilitas" value="90%">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Harga/Malam</label>
+                        <input type="text" name="Harga" class="form-control" placeholder="Harga/Malam"
+                            value="Rp.1.100.000">
+                    </div>
+
+                    <div class="form-group">
+                        <a href="/admin" class="btn btn-outline-success" value="Simpan">Simpan</a>
+                        <a href="/admin" class="btn btn-outline-primary">kembali</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

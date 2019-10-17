@@ -1,0 +1,145 @@
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Admin</a>
+    <form class="form-inline">
+        <h5><a href="">Costumer Service/Bantuan!</a></h5>
+    </form>
+</nav>
+</div>
+</div>
+<br>
+<center>
+    <table border="1">
+        <td>
+            <h2 class="mr-5 ml-5">Urutan Teratas</h2>
+        </td>
+    </table>
+</center>
+<div class="container-fluid">
+    <form class="cari" action="" method="GET">
+        <input class="btn btn-outline-primary" type="text" name="cari" placeholder="SEARCH..." value="">
+
+        <button type="submit" class="btn btn-outline-success"><i class="fa fa-search"></i></button><a
+            style="float: right;" href="/tambah" class="btn btn-outline-primary tambah"><i class="fa fa-plus-circle"
+                aria-hidden="true"></i>
+            Tambahkan Tamu Baru</a>
+    </form>
+</div>
+<center>
+    <br>
+    <div class="container-fluid">
+        <table border="2" class="table table-striped">
+            <thead>
+                <tr style="background: orange;">
+                    <th scope="col" style="text-align: center;">No</th>
+                    <th scope="col" style="text-align: center;">No Kamar</th>
+                    <th scope="col" style="text-align: center;">Jumlah Kasur</th>
+                    <th scope="col" style="text-align: center;">Fasilitas</th>
+                    <th scope="col" style="text-align: center;">Harga/Malam</th>
+                    <th scope="col" style="text-align: center;">Opsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="text-align: center;">
+                    <th scope="row">1</th>
+                    <td>001</td>
+                    <td>2</td>
+                    <td>90%</td>
+                    <td>Rp.1.100.000</td>
+                    <td style="padding: 10px;">
+                        <center>
+                            <a href="/ubah" class="btn btn-outline-success"><i class="fa fa-edit"
+                                    aria-hidden="true"></i>
+                                Ubah</a>
+                            <a href="" class="btn btn-outline-danger"
+                                onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><i
+                                    class="fa fa-trash-o" aria-hiden="true"></i> Hapus</a>
+                        </center>
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <th scope="row">2</th>
+                    <td>002</td>
+                    <td>3</td>
+                    <td>70%</td>
+                    <td>Rp.800.000</td>
+                    <td style="padding: 10px;">
+                        <center>
+                            <a href="/ubah" class="btn btn-outline-success"><i class="fa fa-edit"
+                                    aria-hidden="true"></i>
+                                Ubah</a>
+                            <a href="" class="btn btn-outline-danger"
+                                onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><i
+                                    class="fa fa-trash-o" aria-hiden="true"></i> Hapus</a>
+                        </center>
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <th scope="row">3</th>
+                    <td>003</td>
+                    <td>1</td>
+                    <td>90%</td>
+                    <td>Rp.970.000</td>
+                    <td style="padding: 10px;">
+                        <center>
+                            <a href="/ubah" class="btn btn-outline-success"><i class="fa fa-edit"
+                                    aria-hidden="true"></i>
+                                Ubah</a>
+                            <a href="" class="btn btn-outline-danger"
+                                onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><i
+                                    class="fa fa-trash-o" aria-hiden="true"></i> Hapus</a>
+                        </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</center>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+{{!-- <div>
+    <div class="container-fluid">
+        <div class="">
+            <div>
+                <table border="1" style="float: right;">
+                    <tr>
+                        <td scope="col">No</td>
+                        <td>No Kamar</td>
+                        <td>Jumlah Kasur</td>
+                        <td>Fasilitas</td>
+                        <td>Harga/Malam</td>
+                    </tr>
+                    <tr>
+                        <th>1.</th>
+                        <th>001</th>
+                        <th>2</th>
+                        <th>90%</th>
+                        <th>Rp.1.100.000</th>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th>002</th>
+                        <th>3</th>
+                        <th>70%</th>
+                        <th>Rp.800.000</th>
+                    </tr>
+                    <tr>
+                        <th>3.</th>
+                        <th>003</th>
+                        <th>1</th>
+                        <th>90%</th>
+                        <th>Rp.970.000</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> --}}
